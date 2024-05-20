@@ -1,0 +1,38 @@
+.border {
+    border: 2px solid rgb(250, 249, 249);
+    width: 361px;
+    height: 432px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 41%;
+    margin-top: 94px;
+    background-color: rgb(244, 246, 248);
+    
+
+}
+
+.size,#size {
+    width: 209px;
+    height: 18px;
+    margin-left: 68px;
+    margin-top: 0px;
+}
+body {
+    background-image: url(../img/kantin-sekolah.jpg);
+    background-size: cover;
+}
+
+.log {
+    margin-top: 3%;
+    margin-left: 17%;
+    width: 70px;
+    height: 13px;
+}
+.log button{
+    width: 240px;
+    height: 26px;
+    background-color: green;
+    color: rgb(251, 253, 250);
+    border: none;
+    border-radius: 3px;
+}

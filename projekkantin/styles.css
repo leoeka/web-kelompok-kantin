@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+logo {
+position: absolute;
+left: 60%;
+}
+
+body {
+ background: url('background.jpg'); 
+ background-size: cover;
+ text-align: center;
+}
+
+.container{
+position: relative;
+width: 642px;
+background: transparent;
+padding: 10px 156px;
+margin-top: -36px;
+margin-bottom: 65px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.container .star-widget input{
+display: none;
+}
+.star-widget label{
+font-size: 40px;
+color: #444;
+padding: 10px;
+float: right;
+transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+color: #fd4;
+}
+input:checked ~ label{
+color: #fd4;
+}
+input#rate-5:checked ~ label{
+color: #fe7;
+text-shadow: 0 0 20px #952;
+}
+
+
+form {
+  font-family: 'poppins', sans-serif;
+  max-width: 800px;
+  margin: 150px auto;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  background-color: #fafafafa;
+  
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #CCC9C1;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #003A54;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #096b99;
+}

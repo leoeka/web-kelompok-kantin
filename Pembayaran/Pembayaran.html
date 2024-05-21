@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metode Pembayaran</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Kantin Jual Beli</h1>
-    </header>
-    <main>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gambarback">
+      <div class="kotak">
+        <h1>Kantin JBI</h1>
         <div class="payment-method-container">
-            <h3>Pilih Metode Pembayaran</h3>
-            <div class="method" id="CashOnDeliveryMethod">
-                <input type="radio" id="CashOnDelivery" name="paymentMethod" value="cash">
-                <label for="CashOnDelivery">Bayar Tunai (COD)</label>
-                <div class="crosher" id="cod-crosher"></div>
-            </div>
-            <div class="method" id="bankTransferMethod">
-                <input type="radio" id="bankTranfer" name="paymentMethod" value="bank">
-                <label for="bankTranfer">Transfer Bank</label>
-                <div class="crosher" id="bank-transfer-crosher"></div>
-            </div>
+          <h3>Pilih Metode Pembayaran</h3>
+          <div class="method" id="CashOnDeliveryMethod">
+            <img class="gambar" src="../img/image 7.png" alt="" />
+            <input type="radio" id="CashOnDelivery" name="paymentMethod" value="cash" />
+            <label class="cod" for="CashOnDelivery">Bayar Tunai (COD)</label>
+            <div class="crosher" id="cod-crosher"></div>
+          </div>
+          <div class="method" id="bankTransferMethod">
+            <img class="gambar" src="../img/image 8.png" alt="" />
+            <input type="radio" id="bankTranfer" name="paymentMethod" value="bank" />
+            <label class="cod1" for="bankTranfer">Transfer Bank</label>
+            <div class="crosher" id="bank-transfer-crosher"></div>
+          </div>
         </div>
-        <button onclick="proceedToPayment()">Lanjutkan</button>        
-    </main>
+        <button class="button_bayar" onclick="proceedToPayment()">Bayar</button>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -48,25 +48,35 @@ function updateOrderList() {
     totalPriceElement.textContent = 'Total: Rp. ' + calculateTotal();
 }
 
-// Fungsi untuk menampilkan tampilan pesanan
-function showOrder() {
-    var orderOverlay = document.getElementById('orderOverlay');
-    orderOverlay.style.display = 'block';
-}
-
-// Fungsi untuk menutup tampilan pesanan
-function closeOrder() {
-    var orderOverlay = document.getElementById('orderOverlay');
-    orderOverlay.style.display = 'none';
-}
-
-// Fungsi untuk checkout
 function checkout() {
     var total = calculateTotal();
     // Logika untuk proses checkout
-    alert('Total harga pesanan: Rp. ' + total);
+    if (confirm('Total harga pesanan: Rp. ' + total + '. Apakah Anda ingin melanjutkan ke pembayaran?')) {
+        window.location.href = 'Payment.html';
+    }
     // Setelah checkout berhasil, bersihkan daftar pesanan
     orderItems = [];
     updateOrderList();
 }
 
+function proceedPayment() {
+    var paymentMethods = document.getElementsByName('payment');
+    var selectedMethod;
+    for (var i = 0; i < paymentMethods.length; i++) {
+        if (paymentMethods[i].checked) {
+            selectedMethod = paymentMethods[i].value;
+            break;
+        }
+    }
+
+    var paymentResultDiv = document.getElementById('payment-result');
+    paymentResultDiv.innerHTML = ''; // Clear previous result
+
+    if (selectedMethod === 'bank-transfer') {
+        paymentResultDiv.innerHTML = '<p>Silakan transfer ke nomor rekening berikut: <strong>1234567890</strong></p>';
+    } else if (selectedMethod === 'cod') {
+        paymentResultDiv.innerHTML = '<p>Tunggu pesanan Anda. Pesanan akan segera dikirimkan ke alamat Anda.</p>';
+    } else {
+        paymentResultDiv.innerHTML = '<p>Metode pembayaran ini belum tersedia.</p>';
+    }
+}

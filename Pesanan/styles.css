@@ -1,4 +1,10 @@
-/* CSS styling untuk navigasi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: #333;
     color: white;
@@ -39,59 +45,49 @@ main {
     text-align: center;
 }
 
-#menu, #menu-minuman {
-    text-align: center;
-}
-
-main {
-    text-align: center;
-}
-
-.menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-gap: 10px;
-    position: relative;
-}
-
-.menu-item {
-    background-color: #fff;
-    box-shadow: 0 0 5px #777;
-    border-radius: 5px;
-    border-collapse: separate ;
-    border-spacing: 0 20px ;
+.order-content {
+    background: white;
     padding: 20px;
-    width: 200px;
-    text-align: center;
-    margin: auto;
-}
-
-.menu-item img {
-    max-width: 100%;
-    height: auto;
+    margin: 20px auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
 }
 
-.menu-item h3 {
-    margin-top: 0;
+.category {
+    margin-bottom: 20px;
 }
 
-.menu-item p {
-    margin-bottom: 10px;
+.card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.img {
+    width: 30%;
+    height: auto;
+}
+
+.details {
+    padding: 10px;
+    text-align: left;
+    width: 70%;
+}
+
+.details h4 {
+    margin: 0;
 }
 
 .quantity-controls {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .quantity-controls button {
@@ -107,4 +103,29 @@ main {
 
 .quantity-controls button:hover {
     background-color: #ccc;
+}
+
+.summary {
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+}
+
+button:hover {
+    background-color: #218838;
 }

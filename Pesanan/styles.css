@@ -86,14 +86,8 @@ main {
 .quantity-controls {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     justify-content: space-between;
     margin-top: 10px;
-=======
-    justify-content: center;
-    margin-right:-503px;
-    margin-top: 25px
->>>>>>> a44da794e9934123627d02bb5f58535bc778534f
 }
 
 .quantity-controls button {
@@ -111,7 +105,6 @@ main {
     background-color: #ccc;
 }
 
-<<<<<<< HEAD
 .summary {
     border-top: 2px solid #ddd;
     padding-top: 10px;
@@ -136,101 +129,3 @@ button {
 button:hover {
     background-color: #218838;
 }
-=======
-.border {
-    border: solid 1px;
-    background-color: #ccc;
-    border-radius: 10px;
-    width: 800px;
-    height: 200px;
-    margin-top: 20px;
-    margin-left: 20px;
-    
-}
-.borderluar {
-    height: 478px;
-    width: 876px;
-    border: none;
-    border-radius: 14px;
-    background-color: rgb(138, 138, 134);
-}
-
-.border img {
-    margin-right: 850px;
-    margin-top: 32px;
-    margin-left: 20px;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    
-}
-
-.huruf h3 {
-    position: absolute;
-    top: 333px;
-    left: 190px;
-}
-.huruf p{
-    position: absolute;
-    top: 289px;
-    right: 450px;
-}
-.borderpesanan {
-    position: absolute;
-    border: solid;
-    background-color:  #ccc;
-    border-radius: 5px;
-    height: 200px;
-    width: 200px;
-    margin-left: 950px;
-    margin-top: 20px;
-}
-
-.borderpesanan h5 {
-    margin-right: 150px;
-    margin-top: 24px;
-}
-
-.borderpesanan h3 {
-    margin-left: 134px;
-    margin-top: -41px;
-    font-size: 15px;
-}
-
-.borderpesanan button {
-    margin-top: 70px;
-    width: 180px;
-    background-color: green;
-    color: white;
-    border-radius: 5px;
-    border: none;
-}
-.huruf1 h3,.huruf1 p{
-    position: absolute;
-}
-.huruf1 h3{
-    top: 555px;
-    left: 190px;
-}
-.huruf1 p {
-    top: 508px;
-    right: 450px;
-}
-.tombolcheckout{
-    margin-left: 990px;
-    margin-top: -120px;
-}
-.tombolcheckout button{
-    width: 120px;
-    border-radius: 5px;
-    height: 25px;
-    margin-bottom: 15px;
-    border: none;
-    background-color: #777;
-    color: white;
-
-}
-.background{
-    background-image: url(../img/image\ 6.png);
-}
->>>>>>> a44da794e9934123627d02bb5f58535bc778534f

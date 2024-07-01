@@ -11,7 +11,6 @@
         <h1>Pesanan Anda</h1>
     </header>
     <main>
-        <div class="background">
         <nav>
             <ul class="nav-links">
                 <li><a href="/Home/Home.html">Home</a></li>
@@ -22,7 +21,6 @@
         <div class="order-content">
             <p>Anda dapat melihat pesanan Anda di sini.</p>
             <div class="order-popup">
-
                 <!-- Minuman -->
                 <div class="category">
                     <h3>Minuman</h3>
@@ -67,60 +65,9 @@
                 </div>
                 
                 <!-- Tombol checkout -->
-                <a href="/Pembayaran/Pembayaran.html">
                 <div class="actions">
                     <button id="checkoutButton" onclick="checkout()">Checkout</button>
                 </div>
-                </a>
-
-                <!-- Isi pesanan -->
-                <div class="borderpesanan">
-                    <h2>Ringkasan Belanja</h3>
-                    <h5>Total</h5>
-                    <h3>Rp. 3.000</h3>
-                    <button>Bayar</button>
-                </div>
-                <div class="borderluar">
-                <div class="Menu-item">
-    
-                    <div class="border">
-                    <img src="..//img/Es Teh 2.webp" alt="Es Teh" height="200px">
-            <div class="huruf">
-                    <h3>Es Teh</h3>
-                    <p>Rp. 3.000</p>
-                </div>
-                <div class="quantity-controls">
-                    <button class="btn-tambah" onclick="tambahPesanan('Es Teh', 3000)">+</button>
-                    <span class="jumlah">1</span>
-                    <button class="btn-kurangi" onclick="kurangiPesanan('Es Teh', 3000)">-</button>
-                    </div>
-                </div>
-    
-                    <div class="Menu-item">
-        
-                        <div class="border">
-                        <img src="..//img/Es Teh 2.webp" alt="Es Teh" height="200px">
-                <div class="huruf1">
-                        <h3>Es Teh</h3>
-                        <p>Rp. 3.000</p>
-                    </div>
-                    <div class="quantity-controls">
-                        <button class="btn-tambah" onclick="tambahPesanan('Es Teh', 3000)">+</button>
-                        <span class="jumlah">1</span>
-                        <button class="btn-kurangi" onclick="kurangiPesanan('Es Teh', 3000)">-</button>
-                        </div>
-                    </div>
-                    </div>
-               
-                
-                <div class="tombolcheckout">
-                <!-- Tombol checkout -->
-                <button id="checkoutButton" onclick="checkout()">Checkout</button>
-                <!-- Tombol untuk menutup tampilan pesanan -->
-                <button id="closeOrderButton" onclick="closeOrder()">Close</button>
-                </div>
-            </div>
-
             </div>
         </div>
     </main>

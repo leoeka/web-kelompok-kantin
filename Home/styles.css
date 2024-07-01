@@ -1,17 +1,20 @@
 body{
+    width: 700px;
     background-image: url(/img/image\ 6.png);
+    position: relative;
+    margin: 0 auto;
 }
 .atas{
-float: right;
-display: inlines;
+    position: absolute;
+    right: 0;
 }
-.atas a{
-    
-    background-color: rgb(177, 176, 176);
-    color: black;
-    border: 0px solid;
-    border-radius: 25%;
+.login {
+    position: absolute;
+    right: 0; /* Tempatkan di sebelah kanan */
+    top: 60px; /* Jarak dari atas */
 }
-.login{
-
+.login1 {
+    position: absolute;
+    right: 20%; /* Tempatkan 20% dari kanan */
+    top: 65px; /* Jarak dari atas */
 }

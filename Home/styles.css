@@ -1,17 +1,4 @@
-body{
-    background-image: url(/img/image\ 6.png);
-}
-.atas{
-float: right;
-display: inlines;
-}
-.atas a{
-    
-    background-color: rgb(177, 176, 176);
-    color: black;
-    border: 0px solid;
-    border-radius: 25%;
-}
-.login{
-
-}
+body {
+    background-image: url(/img/kantin-sekolah.jpg);
+    background-size: cover;
+}  

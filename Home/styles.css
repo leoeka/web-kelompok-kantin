@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 body{
     width: 700px;
     background-image: url(/img/image\ 6.png);
@@ -23,7 +23,6 @@ body {
     background-image: url(/img/kantin-sekolah.jpg);
     background-size: cover;
 }  
-=======
 .sepucuk-surat-untuk {
     position: relative;
     display: none;
@@ -807,6 +806,3 @@ body {
     --br-xl: 20px;
     --br-6xl: 25px;
   }
-  
-  
->>>>>>> 887660d1c2bd3223fd81adb896214214b71a86c8

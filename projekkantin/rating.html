@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rating.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Rating Page</title>
+</head>
+<body>
+    <div>
+        <img class="profil" src="img/profile.jpg" alt="">
+    </div>
+    <div class="rating-form">
+        <form>
+            <label for="rating"><small>Beri kami rating dan ulasan atas pengalaman anda</small></label><br>
+            <div class="container">
+                <div class="star-widget">
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fas fa-star"></label>
+                </div>
+                <textarea id="review" name="review" rows="4" cols="50" placeholder="Masukkan ulasan"></textarea><br>
+                <button class="masuk"><a href="/Pesanan/Pesanan.html" style="text-decoration: none; color: white;">Submit ulasan</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -6,6 +6,13 @@
     <title>Pesanan Anda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    body {
+        background-image: url(/img/Kantin);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
 <body>
     <header>
         <h1>Pesanan Anda</h1>
@@ -33,10 +40,14 @@
                                 <button class="btn-tambah" onclick="tambahPesanan('Es Teh', 3000)">+</button>
                                 <span class="jumlah" id="jumlah-teh">1</span>
                                 <button class="btn-kurangi" onclick="kurangiPesanan('Es Teh', 3000)">-</button>
+                                <div>
+                                    <a href="/projekkantin/index.html"><img src="/img/star.png" height="25px"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                    
 
                 <!-- Makanan -->
                 <div class="category">
@@ -50,6 +61,7 @@
                                 <button class="btn-tambah" onclick="tambahPesanan('Nasi Goreng', 12000)">+</button>
                                 <span class="jumlah" id="jumlah-goreng">1</span>
                                 <button class="btn-kurangi" onclick="kurangiPesanan('Nasi Goreng', 12000)">-</button>
+                                <a href="/projekkantin/index.html"><img src="/img/star.png" height="25px"></a>
                             </div>
                         </div>
                     </div>
